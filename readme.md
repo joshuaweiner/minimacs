@@ -1,0 +1,1 @@
+## minimacs - minimal emacs config ##
