@@ -22,13 +22,11 @@
  inhibit-startup-echo-area-message t              ; Disable initial echo message
  initial-scratch-message "")                      ; Empty the initial *scratch* buffer
 
-(menu-bar-mode -1) 			        ; Disable menu-bar
-(tool-bar-mode -1)	         		; Disable tool-bar
-(scroll-bar-mode -1)		        	; Disable scroll-bar
+(menu-bar-mode -1)   			        ; Disable menu-bar
 
 (fset 'yes-or-no-p 'y-or-n-p)		        ; Easier Options
 
-(setq initial-major-mode 'text-mode)	        ; Start with text-mode
+(setq initial-major-mode 'org-mode)	        ; Start with org-mode
 (add-hook 'text-mode-hook 'turn-on-auto-fill)	; Auto-Fill
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
